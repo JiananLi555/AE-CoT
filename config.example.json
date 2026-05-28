@@ -1,0 +1,32 @@
+{
+  "attack_model": {
+    "api_key": "YOUR_ATTACK_MODEL_API_KEY",
+    "base_url": "https://YOUR_PROVIDER/v1",
+    "model": "o3-mini"
+  },
+  "target_model": {
+    "api_key": "YOUR_TARGET_MODEL_API_KEY",
+    "base_url": "https://YOUR_PROVIDER/v1",
+    "model": "o3-mini"
+  },
+  "judge_model": {
+    "api_key": "YOUR_JUDGE_MODEL_API_KEY",
+    "base_url": "https://YOUR_PROVIDER/v1",
+    "model": "gpt-4o-2024-11-20"
+  },
+  "generation": {
+    "target_max_tokens": 4096,
+    "judge_max_tokens": 2048,
+    "temperature": 0.0
+  },
+  "evolution": {
+    "population_size": 10,
+    "max_generations": 3,
+    "initial_mutation_rate": 0.3,
+    "min_mutation_rate": 0.1,
+    "max_mutation_rate": 0.3,
+    "mutation_rate_step": 0.1,
+    "crossover_rate": 0.5,
+    "tournament_size": 3
+  }
+}
